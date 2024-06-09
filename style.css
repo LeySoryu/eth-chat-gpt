@@ -1,5 +1,16 @@
 #copyButton {
     position: fixed;
-    top: 10px;
-    right: 10px;
+    top: 30px;
+    right: 30px;
+    background-color: green;
+    color: black;
+    padding: 10px 20px;
+    font-size: 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#copyButton:hover {
+    background-color: darkgreen;
 }
