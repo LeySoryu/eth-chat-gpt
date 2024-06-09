@@ -1,0 +1,24 @@
+# _config.yml
+
+# Nama situs Anda
+title: Contoh Situs
+
+# Deskripsi situs Anda
+description: Situs web contoh menggunakan Jekyll.
+
+# Tema yang digunakan untuk situs Anda
+theme: jekyll-theme-primer
+
+# Direktori sumber untuk file konten Anda
+source: .
+
+# Direktori destinasi untuk situs web yang dibangun
+destination: ./_site
+
+# Konfigurasi tambahan, misalnya plugin
+plugins:
+  - jekyll-github-metadata
+  - jekyll-seo-tag
+
+# Konfigurasi tambahan, misalnya variabel kustom
+custom_variable: value
