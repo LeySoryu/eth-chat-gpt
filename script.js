@@ -1,28 +1,28 @@
-document.getElementById('copyButton').addEventListener('click', function() {
-    var copyText = document.getElementById('copyText');
+document.getElementById('copySolidityButton').addEventListener('click', function() {
+    var solidityCode = document.querySelector('code.solidity');
     var range = document.createRange();
-    range.selectNode(copyText);
+    range.selectNode(solidityCode);
     window.getSelection().removeAllRanges();
     window.getSelection().addRange(range);
     document.execCommand('copy');
     window.getSelection().removeAllRanges();
-    alert('Text copied: ' + copyText.textContent);
+    alert('Solidity code copied!');
 });
 
-// Menyesuaikan ukuran dan warna tombol "Copy"
-document.getElementById('copyButton').style.backgroundColor = 'green';
-document.getElementById('copyButton').style.color = 'white';
-document.getElementById('copyButton').style.padding = '12px 24px';
-document.getElementById('copyButton').style.fontSize = '20px';
-document.getElementById('copyButton').style.border = 'none';
-document.getElementById('copyButton').style.borderRadius = '8px';
-document.getElementById('copyButton').style.cursor = 'pointer';
+// Adjusting the size and color of the "Copy Code" button
+document.getElementById('copySolidityButton').style.backgroundColor = 'green';
+document.getElementById('copySolidityButton').style.color = 'white';
+document.getElementById('copySolidityButton').style.padding = '12px 24px';
+document.getElementById('copySolidityButton').style.fontSize = '20px';
+document.getElementById('copySolidityButton').style.border = 'none';
+document.getElementById('copySolidityButton').style.borderRadius = '8px';
+document.getElementById('copySolidityButton').style.cursor = 'pointer';
 
-// Efek hover untuk tombol "Copy"
-document.getElementById('copyButton').addEventListener('mouseover', function() {
+// Hover effect for the "Copy Code" button
+document.getElementById('copySolidityButton').addEventListener('mouseover', function() {
     this.style.backgroundColor = 'darkgreen';
 });
 
-document.getElementById('copyButton').addEventListener('mouseout', function() {
+document.getElementById('copySolidityButton').addEventListener('mouseout', function() {
     this.style.backgroundColor = 'green';
 });
