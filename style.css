@@ -1,18 +1,21 @@
-#copyButton {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 10px 20px;
+.copyButton {
     background-color: green;
     color: white;
+    padding: 10px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 25px;
-    z-index: 9999;
+    margin: auto;
+    display: block;
+    transition: all 0.3s ease; /* Menambahkan efek transisi untuk semua perubahan */
 }
 
-#copyButton:hover {
+/* Menambahkan efek hover */
+.copyButton:hover {
     background-color: darkgreen;
+}
+
+/* Menambahkan efek saat tombol diklik */
+.copyButton:active {
+    transform: translateY(2px); /* Menggeser tombol sedikit ke bawah saat ditekan */
 }
