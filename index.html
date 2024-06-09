@@ -7,24 +7,12 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Selamat Datang di Halaman Saya!</h1>
-    <p>Ini adalah halaman web sederhana yang dibuat untuk contoh.</p>
+    <h1>Making a Trading Bot with ChatGPT Just COPY & PASTE </h1>
+    <p>🚨🚨 READ ME! : I've received messages from people who didn't fund the contract with enough Ethereum to cover gas fees and possible burn fees. The bot targets token contracts with max 10% burn fee and anything lower. However, nowadays most tokens come with 2~6% fees. If you fund the contract with 0.4 ETH or less, and the bot targets another token with high burn fees, the contract will waste a lot of gas fees. I recommend funding the contract with at least 0.5 ~ 1 ETH to make sure that won't happen.🚨🚨.</p>
+    <p id="copyText">welcome to our world</p>
     <button id="copyButton">Copy</button>
 
-    <script>
-        document.getElementById("copyButton").addEventListener("click", function() {
-            copyTextToClipboard(document.querySelector('p').innerText);
-            alert("Teks telah disalin!");
-        });
-
-        function copyTextToClipboard(text) {
-            var textArea = document.createElement("textarea");
-            textArea.value = text;
-            document.body.appendChild(textArea);
-            textArea.select();
-            document.execCommand("copy");
-            document.body.removeChild(textArea);
-        }
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
+
