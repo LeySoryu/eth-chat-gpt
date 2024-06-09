@@ -3,21 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Halaman Saya</title>
+    <title>my page</title>
     <style>
         #codeBlock {
             display: none;
         }
-        .copyButton {
-            background-color: green;
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            margin: auto;
-            display: block;
-        }
+.copyButton {
+    background-color: green;
+    color: white;
+    padding: 15px 30px; 
+    border: none;
+    border-radius: 8px; 
+    cursor: pointer;
+    margin: auto;
+    display: block;
+    font-size: 18px; 
+    transition: all 0.3s ease;
+}
+
+.copyButton:hover {
+    background-color: darkgreen;
+}
+
+.copyButton:active {
+    transform: translateY(2px);
+}
     </style>
 </head>
 <body>
